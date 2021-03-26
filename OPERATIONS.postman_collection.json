@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "1fad1d1a-fb14-4351-b6d9-15a185150aa7",
+		"name": "OPERATIONS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREAR-Ingreso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CONCEPT\": \"sueldo\",\r\n    \"AMOUNT\": 900.0,\r\n    \"TYPE_DESCRIPTION\": \"Ingreso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/operations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREAR-Egreso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CONCEPT\": \"Pizza\",\r\n    \"AMOUNT\": 24.0,\r\n    \"TYPE_DESCRIPTION\": \"Egreso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/operations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MODIFICAR",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CONCEPT\": \"PIZAAAA\",\r\n    \"AMOUNT\": 2.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/operations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR TODOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/operations/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/operations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BALANCE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/operations/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/operations/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"operations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
